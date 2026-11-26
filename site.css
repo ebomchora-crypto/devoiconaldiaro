@@ -79,6 +79,12 @@ html,body{height:100%}
 #quiz.free>img.media{max-width:340px}
 #quiz.free>.carousel{max-width:300px;width:100%;margin-inline:auto}
 #quiz.free>.cta{min-height:48px;padding:12px 14px;font-size:16px;letter-spacing:.03em;background:linear-gradient(180deg,#3e8a47,#256b31)!important;border:1px solid var(--ouro);box-shadow:0 3px 8px #1a4a2230}
-#quiz.free .heading{font-size:20px!important}
-#quiz.free>div:not(.heading):not(.carousel){font-size:15px!important}
 #quiz.free>img.media{width:var(--w,auto)!important}
+
+/* ===== Página de vendas: leitura fácil ===== */
+#quiz.free{font-family:'Lora',Georgia,serif}
+#quiz.free .heading{font-family:'Lora',Georgia,serif;font-weight:700;font-size:23px!important;line-height:1.3;color:#1b2a4a}
+#quiz.free .sub{font-size:17px!important;line-height:1.6;color:#2a2018;font-weight:500}
+#quiz.free>div:not(.heading):not(.carousel):not(.sub){font-size:19px!important;line-height:1.5;font-weight:600;text-align:center}
+#quiz.free p{margin:0 0 .3em}
+#quiz.free>.cta{font-family:'Lora',Georgia,serif;font-weight:700;font-size:17px;letter-spacing:.02em;min-height:54px}
