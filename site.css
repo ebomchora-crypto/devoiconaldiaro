@@ -72,4 +72,13 @@ html,body{height:100%}
 #quiz.sparse>.heading{margin-block:auto}
 #quiz.sparse>.cta{margin-top:0}
 #quiz.free>.cta{margin-top:0}
-#quiz.free>img.media{flex:none;max-height:none;width:auto!important}
+#quiz.free>img.media{flex:none;max-height:none;max-width:100%}
+
+/* ===== Página de vendas mais compacta ===== */
+#quiz.free{gap:16px}
+#quiz.free>img.media{max-width:340px}
+#quiz.free>.carousel{max-width:300px;width:100%;margin-inline:auto}
+#quiz.free>.cta{min-height:48px;padding:12px 14px;font-size:16px;letter-spacing:.03em;background:linear-gradient(180deg,#3e8a47,#256b31)!important;border:1px solid var(--ouro);box-shadow:0 3px 8px #1a4a2230}
+#quiz.free .heading{font-size:20px!important}
+#quiz.free>div:not(.heading):not(.carousel){font-size:15px!important}
+#quiz.free>img.media{width:var(--w,auto)!important}
