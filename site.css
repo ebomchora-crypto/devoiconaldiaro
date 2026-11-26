@@ -58,3 +58,18 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--ouro);outline-offse
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition:none!important}}
 @media(max-width:480px){#quiz{padding:22px 18px 28px;gap:18px}#quiz::before{font-size:22px;margin-bottom:-8px}.heading{font-size:21px!important}}
 @media(max-height:700px) and (max-width:480px){#quiz{gap:14px;padding-top:16px}}
+
+/* ===== Cada tela cabe na altura do celular (exceto a página de vendas) ===== */
+html,body{height:100%}
+#quiz{height:calc(100dvh - 36px);min-height:0;overflow-y:auto;overflow-x:hidden}
+#quiz>*{zoom:var(--s,1);flex-shrink:0}
+@media(max-width:480px){#quiz{height:100dvh;margin:0}}
+#quiz.free{height:auto;min-height:100dvh;overflow:visible}
+#quiz.free>*{zoom:1}
+#quiz>.cta,#quiz>.form{margin-top:auto}
+#quiz>img.media,#quiz>.media-fail{flex:1 1 0;flex-shrink:1;min-height:80px;max-height:420px;width:auto!important;max-width:100%;align-self:center;object-fit:contain}
+#quiz>.options{flex:1 1 auto;align-content:space-evenly;grid-auto-rows:minmax(54px,92px)}
+#quiz.sparse>.heading{margin-block:auto}
+#quiz.sparse>.cta{margin-top:0}
+#quiz.free>.cta{margin-top:0}
+#quiz.free>img.media{flex:none;max-height:none;width:auto!important}
